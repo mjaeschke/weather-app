@@ -1,0 +1,23 @@
+.navbar{
+    text-align: center;
+    background-color:lightblue !important;
+    padding: 20px;
+}
+body{
+    background-color: lightgrey !important;
+}
+.container{
+    padding: 20px;
+    float: left;
+}
+
+.saved{
+    border: 2px;
+    border-style: solid;
+    width: 240px;
+}
+
+.card{
+    border-style: solid;
+    border-radius: 5px;
+}

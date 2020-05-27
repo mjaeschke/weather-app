@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Weather-app</title>
+      <link rel="stylesheet" href="./assets/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   </head>
+   <body>
+      <div class = "navbar" >
+      <h1>weather dashboard</h1>
+      </div>
+
+      <div class ="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="row">
+                <h4>search for a city:</h4>
+                <input class ="input" id = "cityInput" placeholder="Enter a City"></input> 
+                <button type="button" class="btn btn-primary submit">Search</button>
+                <div class="saved" id="cities" >...</div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                <div id="currentForcast">
+                    <h1 id="cityName"></h1>
+                    <div class="list-unstyled">
+                        <p id="temperature"></p>
+                        <p id="humidity"></p>
+                        <p id="windSpeed"></p>
+                        <p id="uvIndex">UV Index:</p>
+                    </div>
+                </div>
+                </div>
+                <hr>
+                <H3>5-day forcast:</H3>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h1></h1>
+                        <div id = card class="card" style="width: 10rem;">
+                        <div class="list-unstyled" id = "forcast">
+                            <p id="temperature1"></p>
+                            <p id="humidity1"></p>
+                            <p id="windSpeed1"></p>
+                            <p id="uvIndex1">UV Index:</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <h1></h1>
+                        <div id = card class="card" style="width: 10rem;">
+                        <div class="list-unstyled" id = "forcast">
+                            <p id="temperature2"></p>
+                            <p id="humidity2"></p>
+                            <p id="windSpeed2"></p>
+                            <p id="uvIndex2">UV Index:</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <h1></h1>
+                        <div id = card class="card" style="width: 10rem;">
+                        <div class="list-unstyled" id = "forcast">
+                            <p id="temperature3"></p>
+                            <p id="humidity3"></p>
+                            <p id="windSpeed3"></p>
+                            <p id="uvIndex3">UV Index:</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <h1></h1>
+                        <div id = card class="card" style="width: 10rem;">
+                        <div class="list-unstyled" id = "forcast">
+                            <p id="temperature4"></p>
+                            <p id="humidity4"></p>
+                            <p id="windSpeed4"></p>
+                            <p id="uvIndex4">UV Index:</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <h1></h1>
+                        <div id = card class="card" style="width: 10rem;">
+                        <div class="list-unstyled" id = "forcast">
+                            <p id="temperature5"></p>
+                            <p id="humidity5"></p>
+                            <p id="windSpeed5"></p>
+                            <p id="uvIndex5">UV Index:</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="/assets/source.js"></script>
+   </body>
+</html>
