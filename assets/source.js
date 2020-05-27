@@ -40,6 +40,11 @@ var forcastUrl = apiForcast+cityArr[0]+apiKey;
     console.log(response);
 
             //day 1 forcast
+            var dateElm =$("#date1");
+            var dates =$("<p>");
+            dates.text("date: "+response.list[0].dt_txt);
+            dateElm.append(dates);
+
             var tempElm =$("#temperature1");
             var temperature =$("<p>");
             temperature.text("temp: "+response.list[0].main.temp);
@@ -55,6 +60,11 @@ var forcastUrl = apiForcast+cityArr[0]+apiKey;
             windSpeed.text("wind speed: "+response.list[0].wind.speed);
             windElm.append(windSpeed);
             //day 2 forcast
+            var dateElm =$("#date2");
+            var dates =$("<p>");
+            dates.text("date: "+response.list[1].dt_txt);
+            dateElm.append(dates);
+
             var tempElm =$("#temperature2");
             var temperature =$("<p>");
             temperature.text("temp: "+response.list[1].main.temp);
@@ -70,6 +80,11 @@ var forcastUrl = apiForcast+cityArr[0]+apiKey;
             windSpeed.text("wind speed: "+response.list[1].wind.speed);
             windElm.append(windSpeed);
             //day 3 forcast
+            var dateElm =$("#date3");
+            var dates =$("<p>");
+            dates.text("date: "+response.list[2].dt_txt);
+            dateElm.append(dates);
+
             var tempElm =$("#temperature3");
             var temperature =$("<p>");
             temperature.text("temp: "+response.list[2].main.temp);
@@ -85,6 +100,11 @@ var forcastUrl = apiForcast+cityArr[0]+apiKey;
             windSpeed.text("wind speed: "+response.list[2].wind.speed);
             windElm.append(windSpeed);
             //day 4 forcast
+            var dateElm =$("#date4");
+            var dates =$("<p>");
+            dates.text("date: "+response.list[3].dt_txt);
+            dateElm.append(dates);
+
             var tempElm =$("#temperature4");
             var temperature =$("<p>");
             temperature.text("temp: "+response.list[3].main.temp);
@@ -100,6 +120,11 @@ var forcastUrl = apiForcast+cityArr[0]+apiKey;
             windSpeed.text("wind speed: "+response.list[3].wind.speed);
             windElm.append(windSpeed);
             //day 5 forcast
+            var dateElm =$("#date5");
+            var dates =$("<p>");
+            dates.text("date: "+response.list[4].dt_txt);
+            dateElm.append(dates);
+
             var tempElm =$("#temperature5");
             var temperature =$("<p>");
             temperature.text("temp: "+response.list[4].main.temp);
